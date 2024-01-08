@@ -1,0 +1,22 @@
+/* In your styles or components file */
+@keyframes moveLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .icon-list-container {
+    display: flex;
+    position: absolute;
+    top: 50%; /* Adjust positioning based on your design */
+    transform: translateY(-50%);
+    animation: moveLeft 10s linear infinite; /* Adjust duration as needed */
+  }
+  
+  .icon-item {
+    margin-right: 20px; /* Adjust spacing between icons */
+  }
+  
